@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+body, html {
+    height: 100%; 
+} 
+body{
+    margin: auto;
+    display: block;
+    background-color: #80c3f0;
+}
+
+main{
+  margin: auto;
+    background-color: #060505;
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    width: 390px;
+    box-shadow: rgba(0, 0, 0, 0.56) 5px 50px 90px 15px;
+}
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/lxrcbsv-OksP20g6jJQ-unsplash.jpg");
+  display: block;
+  /* Set a specific height */
+  height: 50%;
+  margin: auto;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 380px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.iconsTop{
+  color: white;
+  display: block;
+  float: right;
+}
+
+/*  About me   */
+h2{
+  color: white;
+}
+
+h3{
+  color: white;
+}
+
+/*  Portfoli - Projects  */
+
+.portfolio{
+  color: white;
+  
+}
+
+#box-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#box-1{
+  background-color: #006da3;
+  height: 160x;
+  width: 100px;
+}
+
+#box-2{
+  background-color: #C91100;
+  height: 160px;
+  width: 100px;
+}
+
+#box-3{
+  background-color: #006da3;
+  height: 160px;
+  width: 100px;
+}
+
+/* Form */
+
+.container{
+  color: white;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+input{
+  width: 100%;
+  padding: 10px 16px 10px 16px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+textarea{
+  width: 100%;
+  padding: 10px 16px 10px 16px;
+  border-radius: 5px;
+  resize: none;
+  border: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+input[type=submit]{
+  background-color: #C91100;
+  padding: 14px 20px 14px 20px;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: lightgrey;
+}
