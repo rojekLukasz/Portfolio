@@ -98,7 +98,7 @@ h3{
 .portfolio{
   background-color: silver;
   color: black;
-  height: 170vh;
+  height: 250vh;
   position: relative;
 }
 
@@ -114,28 +114,43 @@ transform: translate(-50%, -50%);
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 170vh;
+  height: 250vh;
   
   background-color: silver;
 }
 
 #box-1{
   background-color: #006da3;
-  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  height: 70vh;
   width: 280px;
+  
 }
 
 #box-2{
   background-color: #C91100;
-  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  height: 70vh;
   width: 280px;
 }
 
 #box-3{
   background-color: #006da3;
-  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  height: 70vh;
   width: 280px;
 }
+
+.projects {
+  background-color: white;
+  width: 280px;
+  height: 35vh;
+}
+
+
 
 /* Form and icons */
 .bottom {
