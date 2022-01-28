@@ -46,7 +46,6 @@ main{
 }
 
 .iconsTop{
-  color: white;
   display: block;
   float: right;
   font-size: 35px;
@@ -54,6 +53,7 @@ main{
 
 .iconsTop i {
 margin: 15px 10px 0 0;
+color: white;
 }
 
 /*  About me   */
