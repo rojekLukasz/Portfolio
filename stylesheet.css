@@ -33,7 +33,7 @@ main{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 95vw;
+  width: 100vw;
 }
 
 /* Place text in the middle of the image */
@@ -53,7 +53,7 @@ main{
 }
 
 .iconsTop i {
-margin: 15px 10px 0 0;
+margin: 15px 20px 0 0;
 color: white;
 }
 
@@ -63,6 +63,7 @@ button {
 
 /*  About me   */
 .aboutMe{
+  background-color: #D8D8D8;
   background-image:url(./images/keyboard-olena-sergienko-cHlK4sZXOQo-unsplash.jpg);
   display: block;
   height: 80vh;
@@ -80,6 +81,7 @@ button {
   left: 40%;
   transform: translate(-28%, -40%);
   color: #161718;
+  text-shadow: 1px 1px white;
 }
 h2{
   font-family: "Audiowide", sans-serif;
@@ -149,6 +151,9 @@ transform: translate(-50%, -50%);
   width: 280px;
   height: 35vh;
 }
+.projects ul li {
+  font-size: 12px;
+}
 
 
 
@@ -209,4 +214,34 @@ color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 15px;
   margin-left: 15px;
+}
+
+/*  mobile LANDSCAPE   */
+
+@media only screen and (max-height: 440px) {
+  .aboutMe{
+    height: 110vh;
+    background-size: contain;
+  }
+  .portfolio{
+    height: 440vh;
+  }
+  #box-container{
+    height: 440vh;
+  }
+  #box-1{
+    height: 120vh;
+  }
+  #box-2{
+    height: 120vh;
+  }
+  #box-3{
+    height: 120vh;
+  }
+  .projects{
+    height: 70vh;
+  }
+  .bottom{
+    height: 200vh;
+  }
 }
