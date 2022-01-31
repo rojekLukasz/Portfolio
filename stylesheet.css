@@ -250,5 +250,26 @@ color: white;
   }
 }
 @media only screen and (min-height: 441px) and (min-width: 440px) {
+  .portfolio{
+    height: 150vh;
+  }
+  #box-container{
+    height: 150vh;
+  }
   
+  #box-1{
+    width: 35%;
+    height: 60vh;
+  }
+  #box-2{
+    width: 35%;
+    height: 60vh;
+  }
+  #box-3{
+    width: 35%;
+    height: 60vh;
+  }
+  .projects{
+    height: 30vh;
+  }
 }
