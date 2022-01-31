@@ -100,7 +100,7 @@ h3{
 .portfolio{
   background-color: silver;
   color: black;
-  height: 250vh;
+  height: 290vh;
   position: relative;
 }
 
@@ -116,8 +116,7 @@ transform: translate(-50%, -50%);
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 250vh;
-  
+  height: 290vh;
   background-color: silver;
 }
 
@@ -125,7 +124,7 @@ transform: translate(-50%, -50%);
   background-color: #006da3;
   display: flex;
   align-items: flex-end;
-  height: 70vh;
+  height: 80vh;
   width: 280px;
   
 }
@@ -134,7 +133,7 @@ transform: translate(-50%, -50%);
   background-color: #C91100;
   display: flex;
   align-items: flex-end;
-  height: 70vh;
+  height: 80vh;
   width: 280px;
 }
 
@@ -142,14 +141,17 @@ transform: translate(-50%, -50%);
   background-color: #006da3;
   display: flex;
   align-items: flex-end;
-  height: 70vh;
+  height: 80vh;
   width: 280px;
 }
 
 .projects {
   background-color: white;
   width: 280px;
-  height: 35vh;
+  height: 40vh;
+}
+.projects h3{
+  text-align: center;
 }
 .projects ul li {
   font-size: 12px;
@@ -242,6 +244,6 @@ color: white;
     height: 70vh;
   }
   .bottom{
-    height: 200vh;
+    height: 230vh;
   }
 }
