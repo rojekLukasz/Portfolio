@@ -225,7 +225,7 @@ color: white;
 
 /*  mobile LANDSCAPE   */
 
-@media only screen and (max-height: 440px) {
+@media only screen and (max-height: 500px) {
   .aboutMe{
     height: 110vh;
     background-size: contain;
@@ -255,7 +255,7 @@ color: white;
 
 /*   tablets    */
 
-@media only screen and (min-height: 441px) and (min-width: 440px) {
+@media only screen and (min-height: 501px) and (min-width: 440px) {
   .portfolio{
     height: 150vh;
   }
