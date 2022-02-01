@@ -66,7 +66,7 @@ button {
   background-color: #D8D8D8;
   background-image:url(./images/keyboard-olena-sergienko-cHlK4sZXOQo-unsplash.jpg);
   display: block;
-  height: 90vh;
+  height: 95vh;
   margin:auto;
   position: relative;
   background-position: top;
@@ -104,20 +104,26 @@ h3{
   background-size: cover;
   position: relative;
 }
-
+.sectionName {
+  height: 30px;
+  width: 100%;
+  background-color: silver;
+  text-align: center;
+}
+/*
 .portfolio h1{
 position: absolute;
 top: 15px;
 left: 50%;
 transform: translate(-50%, -50%);
-}
+}*/
 
 #box-container{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  height: 290vh;
+  height: 1800px;
   background-color: silver;
 }
 
@@ -125,7 +131,7 @@ transform: translate(-50%, -50%);
   background-color: #006da3;
   display: flex;
   align-items: flex-end;
-  height: 80vh;
+  height: 500px;
   width: 55%;
   
 }
@@ -134,7 +140,7 @@ transform: translate(-50%, -50%);
   background-color: #C91100;
   display: flex;
   align-items: flex-end;
-  height: 80vh;
+  height: 500px;
   /*width: 280px;*/
   width: 55%;
 }
@@ -143,7 +149,7 @@ transform: translate(-50%, -50%);
   background-color: #006da3;
   display: flex;
   align-items: flex-end;
-  height: 80vh;
+  height: 500px;
   /*width: 280px; */
   width: 55%;
 }
@@ -151,14 +157,17 @@ transform: translate(-50%, -50%);
 .projects {
   background-color: white;
   width: 100%;
+  height: 50%;
   /*height: 40vh;*/
   background-size: cover;
+  justify-content: left;
 }
 .projects h3{
   text-align: center;
 }
 .projects ul li {
   font-size: 12px;
+  margin-left: -15px;
 }
 
 
