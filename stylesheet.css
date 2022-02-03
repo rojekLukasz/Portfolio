@@ -34,6 +34,8 @@ main{
   background-size: cover;
   position: relative;
   width: 100vw;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05);
 }
 
 /* Place text in the middle of the image */
@@ -59,11 +61,15 @@ color: white;
 
 button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
 }
 
 /*  About me  -------------------------------------- */
 .aboutMe{
-  background-color: #D8D8D8;
+  background-color: #E7E8EA;
   background-image:url(./images/keyboard-olena-sergienko-cHlK4sZXOQo-unsplash.jpg);
   display: block;
   height: 95vh;
@@ -72,6 +78,8 @@ button {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(110,110,110,0.05); 
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(110,110,110,0.05);
   
 }
 .aboutMeText{
@@ -103,6 +111,8 @@ h3{
   /*height: 290vh;*/
   background-size: cover;
   position: relative;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05); 
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05);
 }
 
 #box-container{
@@ -127,7 +137,9 @@ h3{
   align-items: flex-end;
   height: 500px;
   width: 60%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
 }
   #box-2{
   background-color: #C91100;
@@ -136,7 +148,9 @@ h3{
   height: 500px;
   /*width: 280px;*/
   width: 60%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
 }
 
 #box-3{
@@ -146,7 +160,9 @@ h3{
   height: 500px;
   /*width: 280px; */
   width: 60%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
 }
 
 .projects {
@@ -171,6 +187,8 @@ h3{
 .bottom {
   background-color: grey;
   background-size: cover;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05); 
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05);
 }
 
 .container{
@@ -284,8 +302,27 @@ color: white;
   .hero-image{
     width: 80vw;
   }
+  .aboutMe{
+    background-size: contain;
+    background-position: left;
+  }
+  .aboutMeText{
+    left: 53%;
+    top: 45%;
+  }
+  .aboutMeText h2{
+    font-size: 50px;
+  }
+  .aboutMeText h3{
+    font-size: 30px;
+  }
   #box-container{
-    height: 700px;
+    height: 800px;
+  }
+  .sectionName{
+    height: 70px;
+    font-size: 40px;
+    margin-bottom: 60px;
   }
   #box-1{
     width: 27%;
