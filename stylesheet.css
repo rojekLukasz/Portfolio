@@ -1,34 +1,120 @@
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-body, html {
-    height: 100%; 
-} 
-body{
-    margin: auto;
-    display: block;
-    background-color: #b6d3e4;
+body,
+html {
+  height: 100%;
+}
+body {
+  margin: auto;
+  display: block;
+  background-color: #4fcedf;
+}
+/* header {
+  position: fixed;
+  height: 7vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+} */
+
+main {
+  margin: auto;
+  display: block;
+  height: 100%;
+  width: 100vw;
 }
 
-main{
-  margin: auto;
-    display: block;
-    height: 80vh;
-    width: 100vw;
+#navbar {
+  position: fixed;
+  top: 0;
+  z-index: 9999999999999999;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 35px;
+  /* border-radius: 0 0 10px 10px; */
+  border-bottom: 5px solid;
+  border-image: linear-gradient(45deg, lightyellow, #049de8) 1;
+  /* border-left: 2px solid #049de8;
+  border-right: 2px solid #049de8; */
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(0, 0, 0, 0.05);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(0, 0, 0, 0.05);
 }
-.hero-image {
+
+#navbar a i {
+  margin: 15px 20px 0 0;
+  color: white;
+  display: inline-block;
+}
+
+#navbar i:hover,
+a:hover {
+  transform: scale(1.2);
+  color: lightyellow;
+  cursor: pointer;
+}
+
+#navbar i:active,
+a:active {
+  transform: scale(0.9);
+  color: rgb(173, 169, 169);
+}
+
+#burger {
+  /* position: fixed;
+  top: 5px;
+  right: 5px; */
+  font-size: 40px;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: white;
+}
+
+#siteMenu {
+  display: none;
+  position: absolute;
+  top: 72px;
+  right: 20px;
+  background-color: rgba(248, 248, 215, 0.8);
+}
+
+#siteMenu ul {
+  list-style-type: none;
+  opacity: 1;
+  font-size: 25px;
+  margin: 12px;
+  margin-right: 5px;
+}
+
+#siteMenu ul li a {
+  text-decoration: none;
+}
+
+#welcome-section {
   background-image: url("./images/lxrcbsv-OksP20g6jJQ-unsplash.jpg");
   display: block;
-  height: 80vh;
+  height: 100vh;
   margin: auto;
+  margin-top: 70px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100vw;
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05); 
-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(0, 0, 0, 0.05);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(0, 0, 0, 0.05);
 }
 
 .hero-text {
@@ -39,40 +125,19 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240
   transform: translate(-50%, -50%);
   color: white;
 }
-.hero-text h1{
+.hero-text h1 {
   font-family: "Audiowide", sans-serif;
   font-size: 45px;
 }
 
-.hero-text p{
+.hero-text p {
   font-family: "Audiowide", sans-serif;
   font-size: 24px;
 }
 
-.iconsTop{
-  display: block;
-  float: right;
-  font-size: 35px;
-}
-
-.iconsTop i {
-margin: 15px 20px 0 0;
-color: white;
-}
-
-.iconsTop i:hover{
-  transform: scale(1.2);
-  color: lightyellow;
-  cursor: pointer;
-}
-
-.iconsTop i:active{
-  transform: scale(0.9);
-  color: rgb(173, 169, 169);
-}
-
 button {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 15px;
   font-weight: bold;
   background-color: lightgray;
@@ -81,34 +146,34 @@ button {
   border: none;
 }
 
-button:hover{
+button:hover {
   background-color: lightyellow;
   transform: scale(1.1);
   cursor: pointer;
 }
 
-button:active{
+button:active {
   background-color: rgb(173, 169, 169);
   transform: scale(0.9);
 }
 
-
 /*  About me  -------------------------------------- */
-.aboutMe{
-  background-color: #E7E8EA;
-  background-image:url(./images/keyboard-olena-sergienko-cHlK4sZXOQo-unsplash.jpg);
+#aboutMe {
+  background-color: #e7e8ea;
+  background-image: url(./images/keyboard-olena-sergienko-cHlK4sZXOQo-unsplash.jpg);
   display: block;
   height: 95vh;
-  margin:auto;
+  margin: auto;
   position: relative;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(110,110,110,0.05); 
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(110,110,110,0.05);
-  
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(110, 110, 110, 0.05);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(110, 110, 110, 0.05);
 }
-.aboutMeText{
+.aboutMeText {
   text-align: start;
   position: absolute;
   top: 40%;
@@ -117,30 +182,32 @@ button:active{
   color: #161718;
   text-shadow: 1px 1px white;
 }
-.aboutMeText h2{
+.aboutMeText h2 {
   font-family: "Audiowide", sans-serif;
   font-size: 40px;
   font-weight: 600;
 }
 
-.aboutMeText h3{
+.aboutMeText h3 {
   font-size: 20px;
   margin: 5px;
 }
 
 /*  Portfoli - Projects -------------------- */
 
-.portfolio{
+#projects {
   background-color: silver;
   color: black;
   /*height: 290vh;*/
   background-size: cover;
   position: relative;
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05); 
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(0, 0, 0, 0.05);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(0, 0, 0, 0.05);
 }
 
-#box-container{
+#box-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -156,11 +223,11 @@ button:active{
   text-align: center;
 }
 
-.sectionName h1{
+.sectionName h1 {
   font-family: "Audiowide", sans-serif;
 }
 
-#box-1{
+#box-1 {
   background-color: #006da3;
   display: flex;
   align-items: flex-end;
@@ -171,8 +238,8 @@ button:active{
   -moz-box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
 }
-  #box-2{
-  background-color: #C91100;
+#box-2 {
+  background-color: #c91100;
   display: flex;
   align-items: flex-end;
   height: 500px;
@@ -183,7 +250,7 @@ button:active{
   box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
 }
 
-#box-3{
+#box-3 {
   background-color: #006da3;
   display: flex;
   align-items: flex-end;
@@ -195,7 +262,7 @@ button:active{
   box-shadow: 0px 0px 52px -10px rgba(0, 0, 0, 1);
 }
 
-.projects {
+.projects-tile {
   background-color: white;
   width: 100%;
   height: 50%;
@@ -203,30 +270,29 @@ button:active{
   justify-content: left;
   border-radius: 0 0 15px 15px;
 }
-.projects h3{
+.projects-tile h3 {
   text-align: center;
   font-family: "Audiowide", sans-serif;
-
 }
-.projects ul li {
+.projects-tile ul li {
   font-size: 12px;
   margin-left: -15px;
   font-weight: 700;
 }
 
-
-
 /* Form and icons ----------------------- */
 .bottom {
   background-color: grey;
   background-size: cover;
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05); 
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 240px 240px rgba(0,0,0,0.05);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(0, 0, 0, 0.05);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 240px 240px rgba(0, 0, 0, 0.05);
 }
-#contactForm h1{
+#contactForm h1 {
   font-family: "Audiowide", sans-serif;
 }
-.container{
+.container {
   color: white;
   margin: auto;
   margin-left: 20px;
@@ -236,7 +302,7 @@ button:active{
   text-shadow: 1px 1px black;
 }
 
-input{
+input {
   width: 100%;
   padding: 10px 16px 10px 16px;
   border-radius: 5px;
@@ -244,7 +310,7 @@ input{
   margin-top: 7px;
   margin-bottom: 7px;
 }
-textarea{
+textarea {
   width: 100%;
   padding: 10px 16px 10px 16px;
   border-radius: 5px;
@@ -253,22 +319,23 @@ textarea{
   margin-top: 7px;
   margin-bottom: 7px;
 }
-input[type=submit]{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+input[type="submit"] {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 15px;
-  background-color: #C91100;
+  background-color: #c91100;
   padding: 14px 20px 14px 20px;
   cursor: pointer;
 }
-input[type=submit]:hover{
+input[type="submit"]:hover {
   background-color: #c51909;
   transform: scale(1.01);
 }
-input[type=submit]:active{
+input[type="submit"]:active {
   background-color: #da0909;
   transform: scale(0.9);
 }
-.iconsBottom{
+.iconsBottom {
   display: block;
   align-items: center;
   font-size: 35px;
@@ -276,20 +343,43 @@ input[type=submit]:active{
 }
 
 .iconsBottom i {
-margin: 0 0 20px 22px;
-color: white;
+  margin: 0 0 20px 22px;
+  color: white;
+  cursor: pointer;
 }
 
-.iconsBottom i span{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.iconsBottom i:hover {
+  transform: scale(1.01);
+  color: lightyellow;
+}
+
+.iconsBottom i:active {
+  transform: scale(0.9);
+  color: rgb(173, 169, 169);
+}
+
+.iconsBottom i span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 15px;
   margin-left: 15px;
 }
 
+/* .iconsBottom i span:hover {
+  transform: scale(1.01);
+  color: lightyellow;
+  cursor: pointer;
+}
+
+.iconsBottom i span:active {
+  transform: scale(0.9);
+  color: rgb(173, 169, 169);
+} */
+
 /*  mobile LANDSCAPE   */
 
 @media only screen and (max-height: 500px) {
-  .aboutMe{
+  .aboutMe {
     height: 110vh;
     background-size: contain;
   }
@@ -297,94 +387,81 @@ color: white;
     align-items: center;
     margin-bottom: 50px;
   }
-/* .portfolio{
-    height: 455vh;
-  }
-  #box-container{
-    height: 455vh;
-  }
-  #box-1{
-    height: 125vh;
-  }
-  #box-2{
-    height: 125vh;
-  }
-  #box-3{
-    height: 125vh;
-  }
-  .projects{
-    height: 75vh;
-  }*/
-  
 }
 
 /*   tablets  ---------------------------------  */
 
 @media only screen and (min-height: 501px) and (min-width: 501px) {
-  #box-container{
+  #box-container {
     height: 1200px;
   }
-  
-  #box-1{
+
+  #box-1 {
     width: 35%;
   }
-  #box-2{
+  #box-2 {
     width: 35%;
   }
-  #box-3{
+  #box-3 {
     width: 35%;
   }
 }
 @media only screen and (min-width: 1100px) {
-  main{
+  #navbar {
+    width: 80vw;
+    left: 0;
+    right: 0;
+  }
+  main {
     width: 80vw;
   }
-  .hero-image{
+  #welcome-section {
     width: 80vw;
+    height: 100vh;
   }
-  .aboutMe{
+  #aboutMe {
     background-size: contain;
     background-position: left;
   }
-  .aboutMeText{
+  .aboutMeText {
     left: 53%;
     top: 45%;
   }
-  .aboutMeText h2{
+  .aboutMeText h2 {
     font-size: 50px;
   }
-  .aboutMeText h3{
+  .aboutMeText h3 {
     font-size: 30px;
   }
-  #box-container{
+  #box-container {
     height: 800px;
   }
-  .sectionName{
+  .sectionName {
     height: 70px;
     font-size: 40px;
     margin-bottom: 60px;
   }
-  #box-1{
+  #box-1 {
     width: 27%;
   }
-  #box-2{
+  #box-2 {
     width: 27%;
   }
-  #box-3{
+  #box-3 {
     width: 27%;
   }
-  .bottom{
+  .bottom {
     width: 100%;
     display: flex;
     align-items: center;
     justify-items: flex-start;
-
   }
-  .container{
+
+  .container {
     width: 50%;
     margin-right: 150px;
   }
-  .iconsBottom{
+  .iconsBottom {
     width: 50%;
     display: flex;
     flex-direction: column;
