@@ -36,7 +36,13 @@ main {
   margin-right: auto;
   height: 70px;
   width: 100%;
-  background-color: #000000;
+  background: rgb(4, 43, 65);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 43, 65, 1) 5%,
+    rgba(91, 25, 25, 1) 50%,
+    rgba(4, 43, 65, 1) 95%
+  );
   display: flex;
   justify-content: flex-end;
   font-size: 35px;
