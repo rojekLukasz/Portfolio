@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <script src="https://kit.fontawesome.com/d38b399752.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id='navbar'>
-        <a href="https://github.com/rojekLukasz" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" ></i></a>
-        <a href="https://www.linkedin.com/in/rojekLukasz/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-        <i id="burger" class="fa fa-bars"></i>
+        <div id='iconsTop'>
+            <a href="https://github.com/rojekLukasz" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" ></i></a>
+            <a href="https://www.linkedin.com/in/rojekLukasz/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <i id="burger" class="fa fa-bars"></i>
+        </div>
         <div id='siteMenu'>
+            <ul>
+                <li><a class='links' href='#aboutMe'>About me</a></li>
+                <li><a class='links' href='#projects'>Portfolio</a></li>
+                <li><a class='links' href='#contactForm'>Contact</a></li>
+            </ul>
+        </div>
+        <div id='topMenu'>
             <ul>
                 <li><a class='links' href='#aboutMe'>About me</a></li>
                 <li><a class='links' href='#projects'>Portfolio</a></li>
@@ -43,29 +53,35 @@
         <div id="box-container">
             <div class="sectionName"><h1>Portfolio</h1></div>
             <div id="box-1">
-                <div class="projects-tile">
-                <h3>Project 1</h3>
+                <div class='projectLogo'>
+                    <img src="./images/phone logo blank.png" alt="7 amazing logo" width='100%' height='100%'>
+                </div>
+                <div class="projects-discription">
+                <h3>7 amazing</h3>
                 <ul>
-                    <li>Live website link:<h6>space for link</h6></li>
-                    <li>Github code link:<h6>space for link</h6></li>
-                    <li>Technogies used: CSS, JavaScript,React</li>
-                    <li>Brief summary: A great app</li>
+                    <li>Live website link:<h5><a href='https://rojeklukasz.github.io/7amazing/' target='blank'>https://rojeklukasz.github.io/7amazing/</a></h5></li>
+                    <li>Github code link:<h5>https://github.com/rojekLukasz/7amazing.git</h5></li>
+                    <li>Technogies used: HTML, CSS, JavaScript</li>
+                    <li>Brief summary: App with historical sites</li>
                 </ul>
             </div>
             </div>
             <div id="box-2">
-                <div class="projects-tile">
+                <div class='projectLogo'>
+                    <img src="./images/Todo.png" alt="7 amazing logo" width='100%' height='100%'>
+                </div>
+                <div class="projects-discription">
                 <h3>Project 2</h3>
                 <ul>
-                    <li>Live website link:<h6>space for link</h6></li>
-                    <li>Github code link:<h6>space for link</h6></li>
+                    <!-- <li>Live website link:<h6>space for link</h6></li> -->
+                    <li>Github code link:<h6>https://github.com/rojekLukasz/Project-group3.git</h6></li>
                     <li>Technogies used: CSS, JavaScript,React</li>
-                    <li>Brief summary: A great app</li>
+                    <li>Brief summary: Todo app</li>
                 </ul>
             </div>
             </div>
             <div id="box-3">
-                <div class="projects-tile">
+                <div class="projects-discription">
                 <h3>Project 3</h3>
                 <ul>
                     <li>Live website link:<h6>space for link</h6></li>
@@ -98,6 +114,8 @@
                 <textarea name="message" rows="6" cols="30"></textarea>
 
                 <input type="submit" value="Send a message" />
+
+                <input type="hidden" name="_next" value="https://rojeklukasz.github.io/Portfolio/Thanks/index.html">
             </form>
         </div>
         <div class="iconsBottom">

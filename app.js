@@ -11,6 +11,8 @@ burger.addEventListener("click", function() {
   } else {siteMenu.style.display = 'block'}
 })
 
+
+
 for(let i = 0; i < links.length; i++){
 links[i].addEventListener("click", () => {
   siteMenu.style.display = 'none';
